@@ -111,6 +111,8 @@ body {
   flex-direction: column;
 }
 
+/* right section of the webpage */
+
 .timeline {
   display: flex;
   flex-direction: column;
@@ -148,4 +150,72 @@ body {
   font-weight: 500;
   color: #2e2e48;
   padding-bottom: 32px;
+}
+
+.project-container {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 48px;
+}
+
+.project {
+  background-color: #f7f9fc;
+  padding: 24px;
+}
+
+.project > div {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 16px;
+}
+
+.project > div img {
+  align-self: start;
+}
+
+.project-title {
+  color: #2e2e48;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.project-link {
+  font-family: "DM Sans", sans-serif;
+  color: #516cf7;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.experience-container {
+  padding: 10px 32px;
+}
+
+.experience {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 24px;
+}
+
+.experience-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-basis: 1000px;
+}
+
+.experience-details > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.experience-company {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2e2e48;
+}
+
+.experience > p {
+  flex-basis: 1000px;
 }
