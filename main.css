@@ -121,7 +121,8 @@ body {
   position: relative;
 }
 
-.timeline li {
+.timeline > li,
+.experience-container > li {
   list-style-type: none;
   padding-bottom: 1.5rem;
   border-left: 1.5px solid #e2e6ee;
@@ -244,4 +245,33 @@ body {
   padding-bottom: 8px;
   color: #2e2e48;
   font-size: 12px;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 48px;
+}
+
+.skills {
+  display: flex;
+  gap: 10px;
+}
+
+.skill {
+  color: #9251f7;
+  font-weight: 500;
+  flex: 1;
+  background-color: #f7f9fc;
+  padding: 23px 16px;
+}
+
+.skill:first-child {
+  background-color: white;
+}
+
+.skills:last-child p,
+.skills:last-child li {
+  color: #516cf7;
 }
