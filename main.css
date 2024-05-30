@@ -298,3 +298,50 @@ body {
 .tool img {
   padding-bottom: 10px;
 }
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .profile-quote > p {
+    padding: 4% 0% 0% 4%;
+  }
+
+  .languages {
+    padding-bottom: 32px;
+  }
+
+  .timeline {
+    padding: 32px 24px;
+  }
+
+  .project-container {
+    flex-direction: column;
+  }
+
+  .experience {
+    flex-direction: column;
+  }
+
+  .experience-details,
+  .experience > p {
+    flex-basis: 100%;
+  }
+
+  .education-container {
+    flex-direction: column;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+}
