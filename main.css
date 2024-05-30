@@ -35,6 +35,7 @@ body {
 
 .content {
   width: 70%;
+  margin: auto;
 }
 
 .profile {
@@ -274,4 +275,26 @@ body {
 .skills:last-child p,
 .skills:last-child li {
   color: #516cf7;
+}
+
+.tools {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+.tool {
+  flex-basis: 150px;
+  font-weight: 500;
+  background-color: #f7f9fc;
+  padding: 19px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tool img {
+  padding-bottom: 10px;
 }
