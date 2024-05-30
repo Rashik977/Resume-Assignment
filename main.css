@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  display: flex;
+}
+
+.sm-text {
+  color: #79819a;
+  font-size: 12px;
+}
+
+.sidebar {
+  background-color: #f7f9fc;
+  width: 30%;
+  flex-basis: 356px;
+}
+
+.sidebar hr {
+  color: #e2e6ee;
+  margin: 32px 0px;
+}
+
+.sidebar-content {
+  padding: 0% 48px;
+}
+
+.content {
+  width: 70%;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+}
+
+.profile-image {
+  width: 100%;
+  padding-bottom: 32px;
+}
+
+.profile-name > p:first-child {
+  font-size: 32px;
+  font-weight: 500;
+  color: #2e2e48;
+}
+
+.profile-name > p:last-child {
+  font-size: 24px;
+  font-weight: 500;
+  background: linear-gradient(to right, #a478e8, #516cf7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.profile-quote > div {
+  display: flex;
+}
+
+.profile-quote div p {
+  text-align: center;
+}
+
+.profile-quote div img:first-child {
+  align-self: start;
+}
+
+.profile-quote div img:last-child {
+  align-self: end;
+}
+
+.profile-quote > p {
+  padding: 4% 0% 0% 15%;
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contact,
+.socials,
+.languages {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contact > div,
+.socials > div,
+.languages > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.contact > div div,
+.socials > div div,
+.languages > div div {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  padding: 64px 48px;
+  position: relative;
+}
+
+.timeline li {
+  list-style-type: none;
+  padding-bottom: 1.5rem;
+  border-left: 1.5px solid #e2e6ee;
+  position: relative;
+  padding: 0px 32px;
+  &:last-child {
+    border: 0px;
+    padding-bottom: 0;
+  }
+  &:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #5531a7;
+    border: 6px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    box-shadow: 1px 1px 5px 0px grey;
+  }
+}
+
+.content-title {
+  font-family: "Outfit", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #2e2e48;
+  padding-bottom: 32px;
+}
