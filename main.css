@@ -308,8 +308,9 @@ body {
 }
 
 .vertical-line {
-  border-left: 1.5px solid #e2e6ee;
+  width: 2px;
   height: 100%;
+  background-color: #e2e6ee;
 }
 
 .skills:last-child p,
