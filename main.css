@@ -285,6 +285,33 @@ body {
   background-color: white;
 }
 
+.skills:first-child .skill:nth-child(2) {
+  display: flex;
+  gap: 10px;
+}
+
+.skills:last-child .skill:nth-child(4) {
+  display: flex;
+  gap: 10px;
+}
+
+.skills:last-child .skill:last-child {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.development-last {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vertical-line {
+  border-left: 1.5px solid #e2e6ee;
+  height: 100%;
+}
+
 .skills:last-child p,
 .skills:last-child li {
   color: #516cf7;
