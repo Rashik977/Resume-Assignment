@@ -292,6 +292,8 @@ body {
 
 .skills:last-child .skill:nth-child(4) {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 
@@ -309,7 +311,6 @@ body {
 
 .vertical-line {
   width: 2px;
-  height: 100%;
   background-color: #e2e6ee;
 }
 
