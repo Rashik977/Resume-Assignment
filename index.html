@@ -7,123 +7,139 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- content for the sidebar -->
-    <aside class="container sidebar">
+    <!-- sidebar content -->
+    <aside class="sidebar">
       <!-- hero image -->
-      <div>
-        <img src="./images/profile.png" alt="profile" class="profile-image" />
-      </div>
-      <div class="sidebar-content">
+      <figure class="sidebar__image">
+        <img src="./images/profile.png" alt="profile" class="image" />
+      </figure>
+      <div class="sidebar__content">
         <!-- Profile -->
         <div class="profile">
-          <div class="profile-text">
-            <div class="profile-name">
-              <p>Chiara Bianchi</p>
-              <p>Product Designer</p>
+          <div class="profile__header">
+            <h1 class="profile__name">Chiara Bianchi</h1>
+            <h1 class="profile__name profile__name--gradient">
+              Product Designer
+            </h1>
+          </div>
+          <div class="quote quote--profile">
+            <div class="quote__container">
+              <img
+                src="images/quoteUp.png"
+                alt="quoteUp"
+                class="quote__imageUp"
+              />
+              <p class="quote__text">
+                Design isn’t finished until somebody is using it.
+              </p>
+              <img
+                src="images/quoteDown.png"
+                alt="quoteDown"
+                class="quote__imageDown"
+              />
             </div>
-            <div class="profile-quote">
-              <div>
-                <img src="images/quoteUp.png" alt="quoteUp" />
-                <p>Design isn’t finished until somebody is using it.</p>
-                <img src="images/quoteDown.png" alt="quoteDown" />
-              </div>
-              <p class="sm-text">Brenda Laurel</p>
-            </div>
+            <p class="quote__author sm-text">Brenda Laurel</p>
           </div>
         </div>
-        <hr />
-        <!-- contact -->
-        <div class="contact">
-          <div>
+
+        <hr class="sidebar__divider" />
+
+        <!-- contact section-->
+        <div class="sidebar-card">
+          <div class="sidebar-card__item">
             <img src="images/mail.png" alt="mail" />
-            <div>
+            <div class="sidebar-card__text">
               <p class="sm-text">Email</p>
               <p>chiara.bianchi@gmail.com</p>
             </div>
           </div>
-          <div>
+          <div class="sidebar-card__item">
             <img src="images/link.png" alt="link" />
-            <div>
+            <div class="sidebar-card__text">
               <p class="sm-text">Website</p>
               <p>https://aldesign.it</p>
             </div>
           </div>
-          <div>
+          <div class="sidebar-card__item">
             <img src="images/phone.png" alt="phone" />
-            <div>
+            <div class="sidebar-card__text">
               <p class="sm-text">Phone</p>
               <p>(+39) 333 0123 765</p>
             </div>
           </div>
-          <div>
+          <div class="sidebar-card__item">
             <img src="images/location.png" alt="location" />
-            <div>
+            <div class="sidebar-card__text">
               <p class="sm-text">Address</p>
               <p>Bologna, Italy</p>
             </div>
           </div>
         </div>
-        <hr />
-        <!-- socials -->
-        <div class="socials">
+
+        <hr class="sidebar__divider" />
+
+        <!-- socials section-->
+        <div class="sidebar-card">
           <p class="sm-text">Social</p>
-          <div>
+          <div class="sidebar-card__item">
             <img src="images/instagram.png" alt="instagram" />
-            <div>
+            <div class="sidebar-card__text">
               <p class="sm-text">Instagram</p>
               <p>@chiara.designs</p>
             </div>
           </div>
-          <div>
+          <div class="sidebar-card__item">
             <img src="images/dribble.png" alt="dribble" />
-            <div>
+            <div class="sidebar-card__text">
               <p class="sm-text">Dribble</p>
               <p>@chiara-designs</p>
             </div>
           </div>
-          <div>
+          <div class="sidebar-card__item">
             <img src="images/twitter.png" alt="twitter" />
-            <div>
+            <div class="sidebar-card__text">
               <p class="sm-text">Twitter</p>
               <p>@chiaradesigns</p>
             </div>
           </div>
-          <div>
+          <div class="sidebar-card__item">
             <img src="images/linkedin.png" alt="LinkedIn" />
-            <div>
+            <div class="sidebar-card__text">
               <p class="sm-text">LinkedIn</p>
               <p>chiara-bianchi-123</p>
             </div>
           </div>
         </div>
-        <hr />
-        <!-- languages -->
-        <div class="languages">
+
+        <hr class="sidebar__divider" />
+
+        <!-- languages section-->
+        <div class="sidebar-card languages">
           <p class="sm-text">languages</p>
-          <div>
+          <div class="sidebar-card__item">
             <img src="images/italy.png" alt="italy" />
-            <div>
+            <div class="sidebar-card__text">
               <p>Italian</p>
               <p class="sm-text">Native</p>
             </div>
           </div>
-          <div>
+          <div class="sidebar-card__item">
             <img src="images/greece.png" alt="greece" />
-            <div>
+            <div class="sidebar-card__text">
               <p>Greek</p>
               <p class="sm-text">Native</p>
             </div>
           </div>
-          <div>
+          <div class="sidebar-card__item">
             <img src="images/UK.png" alt="UK" />
-            <div>
+            <div class="sidebar-card__text">
               <p>English</p>
               <p class="sm-text">Professional working</p>
             </div>
           </div>
-          <div>
+          <div class="sidebar-card__item">
             <img src="images/spain.png" alt="spain" />
-            <div>
+            <div class="sidebar-card__text">
               <p>Spanish</p>
               <p class="sm-text">Elementary</p>
             </div>
@@ -133,68 +149,78 @@
     </aside>
 
     <!-- main content-->
-    <main class="container content">
+    <main class="content">
       <ul class="timeline">
-        <li>
-          <!-- projects -->
-          <p class="content-title">Latest Project</p>
-          <div class="project-container">
-            <div class="project">
-              <div>
-                <img src="images/figma.png" alt="figma" />
-                <div>
-                  <p class="project-title">Powerful Design System</p>
-                  <p class="sm-text">
-                    Figma UI Kit and Design System targeting a wide variety of
-                    use cases.
-                  </p>
+        <!-- projects -->
+        <li class="timeline__item">
+          <section>
+            <h1 class="timeline__title">Latest Project</h1>
+            <div class="project-container">
+              <div class="project">
+                <div class="project__details">
+                  <img
+                    src="images/figma.png"
+                    alt="figma"
+                    class="project__image"
+                  />
+                  <div class="project__description">
+                    <p class="project__title">Powerful Design System</p>
+                    <p class="sm-text">
+                      Figma UI Kit and Design System targeting a wide variety of
+                      use cases.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__link-container">
+                  <img src="images/figma-small.png" alt="figma" />
+                  <p class="project__link">https://figma.com</p>
                 </div>
               </div>
-              <div>
-                <img src="images/figma-small.png" alt="figma" />
-                <p class="project-link">https://figma.com</p>
-              </div>
-            </div>
-            <div class="project">
-              <div>
-                <img src="images/bolt.png" alt="figma" />
-                <div>
-                  <p class="project-title">Modern Website</p>
-                  <p class="sm-text">
-                    Powerful website + dashboard template for your next Chakra
-                    UI project.
-                  </p>
+              <div class="project">
+                <div class="project__details">
+                  <img
+                    src="images/bolt.png"
+                    alt="figma"
+                    class="project__image"
+                  />
+                  <div class="project__description">
+                    <p class="project__title">Modern Website</p>
+                    <p class="sm-text">
+                      Powerful website + dashboard template for your next Chakra
+                      UI project.
+                    </p>
+                  </div>
+                </div>
+                <div class="project__link-container">
+                  <img src="images/figma-small.png" alt="figma" />
+                  <p class="project__link">https://ui-8.net</p>
                 </div>
               </div>
-              <div>
-                <img src="images/figma-small.png" alt="figma" />
-                <p class="project-link">https://ui-8.net</p>
-              </div>
             </div>
-          </div>
+          </section>
         </li>
-        <li>
-          <!-- Experience -->
-          <p class="content-title">Experience</p>
-          <div>
-            <ul class="experience-container">
-              <li>
+        <!-- Experience -->
+        <li class="timeline__item">
+          <section>
+            <h1 class="timeline__title">Experience</h1>
+            <ul class="timeline timeline--experience">
+              <li class="timeline__item">
                 <div class="experience sm-text">
-                  <div class="experience-details">
-                    <div>
+                  <div class="experience__details">
+                    <div class="experience__date-location">
                       <p>Jul 20 - Jan 2022</p>
                       <img src="images/location-small.png" alt="location" />
                       <p>Cupertino</p>
                     </div>
-                    <div>
+                    <div class="experience__company-details">
                       <img src="images/apple.png" alt="apple" />
                       <div>
                         <p>Product Designer</p>
-                        <p class="experience-company">Apple</p>
+                        <p class="experience__company">Apple</p>
                       </div>
                     </div>
                   </div>
-                  <p>
+                  <p class="experience__description">
                     Omnis minima inventore minus. Aut et incidunt. Aut fugiat
                     culpa illum optio dolorum aut maxime ipsa. Laborum incidunt
                     enim consectetur perspiciatis. Dolore ullam dolor impedit
@@ -203,69 +229,69 @@
                   </p>
                 </div>
               </li>
-              <li>
+              <li class="timeline__item">
                 <div class="experience sm-text">
-                  <div class="experience-details">
-                    <div>
+                  <div class="experience__details">
+                    <div class="experience__date-location">
                       <p>Oct 2015 - Mar 2020</p>
                       <img src="images/location-small.png" alt="location" />
                       <p>Austin</p>
                     </div>
-                    <div>
+                    <div class="experience__company-details">
                       <img src="images/tesla.png" alt="tesla" />
                       <div>
                         <p>UX designer</p>
-                        <p class="experience-company">Tesla</p>
+                        <p class="experience__company">Tesla</p>
                       </div>
                     </div>
                   </div>
-                  <p>
+                  <p class="experience__description">
                     Commodi atque sit ut qui assumenda earum aperiam occaecati
                     voluptates. Fuga quas aut soluta nostrum et beatae. Maiores
                     repudiandae quibusdam autem enim ut in possimus ad.
                   </p>
                 </div>
               </li>
-              <li>
+              <li class="timeline__item">
                 <div class="experience sm-text">
-                  <div class="experience-details">
-                    <div>
+                  <div class="experience__details">
+                    <div class="experience__date-location">
                       <p>Sep 2014 - Aug 2015</p>
                       <img src="images/location-small.png" alt="location" />
                       <p>Mountain View</p>
                     </div>
-                    <div>
+                    <div class="experience__company-details">
                       <img src="images/google.png" alt="google" />
                       <div>
                         <p>Design system architect</p>
-                        <p class="experience-company">Google</p>
+                        <p class="experience__company">Google</p>
                       </div>
                     </div>
                   </div>
-                  <p>
+                  <p class="experience__description">
                     Ut molestias animi. Neque voluptate velit corporis adipisci
                     voluptate et qui sed neque. Inventore eos non. Qui eveniet
                     quo incidunt nemo.
                   </p>
                 </div>
               </li>
-              <li>
+              <li class="timeline__item">
                 <div class="experience sm-text">
-                  <div class="experience-details">
-                    <div>
+                  <div class="experience__details">
+                    <div class="experience__date-location">
                       <p>Sep 2010 - Jul 2013</p>
                       <img src="images/location-small.png" alt="location" />
                       <p>Berlin</p>
                     </div>
-                    <div>
+                    <div class="experience__company-details">
                       <img src="images/vector.png" alt="vector" />
                       <div>
                         <p>Design system architect</p>
-                        <p class="experience-company">Vectornator</p>
+                        <p class="experience__company">Vectornator</p>
                       </div>
                     </div>
                   </div>
-                  <p>
+                  <p class="experience__description">
                     Non in fugiat aut consequatur deleniti. Consequuntur impedit
                     modi asperiores impedit ut ea aut eligendi doloremque. Fugit
                     laborum ducimus hic tempore velit. Sed vitae et corrupti
@@ -276,151 +302,181 @@
                 </div>
               </li>
             </ul>
-          </div>
+          </section>
         </li>
-        <li>
-          <!-- Education -->
-          <p class="content-title">Education</p>
-          <div class="education-container">
-            <div class="education">
-              <div>
-                <img src="images/memo.png" alt="memo" />
-                <p>Memorisely</p>
+        <!-- Education -->
+        <li class="timeline__item">
+          <section>
+            <h1 class="timeline__title">Education</h1>
+            <div class="education-container">
+              <div class="education">
+                <div class="education__details">
+                  <img src="images/memo.png" alt="memo" />
+                  <p>Memorisely</p>
+                </div>
+                <p>Build a design system</p>
+                <p class="sm-text">Oct 2021</p>
               </div>
-              <p>Build a design system</p>
-              <p class="sm-text">Oct 2021</p>
-            </div>
-            <div class="education">
-              <div>
-                <img src="images/UX.png" alt="UX" />
-                <p>UX acadamy</p>
+              <div class="education">
+                <div class="education__details">
+                  <img src="images/UX.png" alt="UX" />
+                  <p>UX acadamy</p>
+                </div>
+                <p>UX Design certificate</p>
+                <p class="sm-text">Feb 2020</p>
               </div>
-              <p>UX Design certificate</p>
-              <p class="sm-text">Feb 2020</p>
-            </div>
-            <div class="education">
-              <div>
-                <img src="images/coursera.png" alt="coursera" />
-                <p>Coursera</p>
+              <div class="education">
+                <div class="education__details">
+                  <img src="images/coursera.png" alt="coursera" />
+                  <p>Coursera</p>
+                </div>
+                <p>Usera reasearch course</p>
+                <p class="sm-text">Dec 2019</p>
               </div>
-              <p>Usera reasearch course</p>
-              <p class="sm-text">Dec 2019</p>
             </div>
-          </div>
+          </section>
         </li>
-        <li>
-          <!-- skills -->
-          <p class="content-title">Skills</p>
-          <div class="skills-container">
-            <div class="skills">
-              <div class="skill">
-                <img src="images/paint.png" alt="paint" />
-                <p>Design</p>
+        <!-- skills -->
+        <li class="timeline__item">
+          <section>
+            <h1 class="timeline__title">Skills</h1>
+            <div class="skills-container">
+              <div class="skills">
+                <div class="skills__category">
+                  <img src="images/paint.png" alt="paint" />
+                  <p>Design</p>
+                </div>
+                <div class="skills__items">
+                  <div class="skill skill--flex">
+                    <p>Web Design</p>
+                    <div class="skill__divider"></div>
+                    <p>Mobile Design</p>
+                  </div>
+                  <div class="skill">
+                    <p>User Experience</p>
+                  </div>
+                  <div class="skill">
+                    <ul class="skill__list">
+                      <li>Wireframing</li>
+                      <li>Prototyping</li>
+                      <li>Testing</li>
+                    </ul>
+                  </div>
+                  <div class="skill">
+                    <p>Design System</p>
+                  </div>
+                </div>
               </div>
-              <div class="skill">
-                <p>Web Design</p>
-                <div class="vertical-line"></div>
-                <p>Mobile Design</p>
-              </div>
-              <div class="skill">
-                <p>User Experience</p>
-              </div>
-              <div class="skill">
-                <ul style="list-style: disc">
-                  <li>Wireframing</li>
-                  <li>Prototyping</li>
-                  <li>Testing</li>
-                </ul>
-              </div>
-              <div class="skill">
-                <p>Design System</p>
-              </div>
-            </div>
 
-            <div class="skills">
-              <div class="skill">
-                <img src="images/code.png" alt="development" />
-                <p>Development</p>
-              </div>
-              <div class="skill">
-                <p>React JS</p>
-              </div>
-              <div class="skill">
-                <ul style="list-style: disc">
-                  <li>Chakra UI</li>
-                  <li>Emotion</li>
-                  <li>Framer</li>
-                </ul>
-              </div>
-              <div class="skill">
-                <p>Type script</p>
-                <div class="vertical-line"></div>
-                <p>Next JS</p>
-              </div>
-              <div class="skill">
-                <p>HTML</p>
-                <div class="vertical-line"></div>
-                <div class="development-last">
-                  <p>CSS</p>
-                  <hr />
-                  <p>JS</p>
+              <div class="skills skills--last">
+                <div class="skills__category skills__category--last">
+                  <img src="images/code.png" alt="development" />
+                  <p>Development</p>
+                </div>
+                <div class="skills__items">
+                  <div class="skill skill--last">
+                    <p>React JS</p>
+                  </div>
+                  <div class="skill skill--last">
+                    <ul class="skill__list">
+                      <li>Chakra UI</li>
+                      <li>Emotion</li>
+                      <li>Framer</li>
+                    </ul>
+                  </div>
+                  <div class="skill skill--last skill--flex">
+                    <p>Type script</p>
+                    <div class="skill__divider"></div>
+                    <p>Next JS</p>
+                  </div>
+                  <div class="skill skill--last skill--complex">
+                    <p>HTML</p>
+                    <div
+                      class="skill__divider skill__divider--horizontal"
+                    ></div>
+                    <div class="skill__item skill__item--last">
+                      <p>CSS</p>
+                      <hr />
+                      <p>JS</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         </li>
-        <li>
-          <!-- tools -->
-          <p class="content-title">Tools</p>
-          <div class="tools-container">
-            <div class="tools">
-              <div class="tool">
-                <img src="images/figma.png" alt="figma" />
-                <p>Figma</p>
-                <p class="sm-text">UI Design, prototyping</p>
+        <!-- tools -->
+        <li class="timeline__item">
+          <section>
+            <h1 class="timeline__title">Tools</h1>
+            <div class="tools-container">
+              <div class="tools">
+                <div class="tool">
+                  <img src="images/figma.png" alt="figma" class="tool__image" />
+                  <p>Figma</p>
+                  <p class="sm-text">UI Design, prototyping</p>
+                </div>
+                <div class="tool">
+                  <img src="images/maze.png" alt="maze" class="tool__image" />
+                  <p>Maze</p>
+                  <p class="sm-text">Product research</p>
+                </div>
+                <div class="tool">
+                  <img
+                    src="images/spline.png"
+                    alt="spline"
+                    class="tool__image"
+                  />
+                  <p>Spline</p>
+                  <p class="sm-text">3D design</p>
+                </div>
+                <div class="tool">
+                  <img
+                    src="images/zeplin.png"
+                    alt="zeplin"
+                    class="tool__image"
+                  />
+                  <p>Zeplin</p>
+                  <p class="sm-text">Design workspace</p>
+                </div>
               </div>
-              <div class="tool">
-                <img src="images/maze.png" alt="figma" />
-                <p>Maze</p>
-                <p class="sm-text">Product research</p>
-              </div>
-              <div class="tool">
-                <img src="images/spline.png" alt="figma" />
-                <p>Spline</p>
-                <p class="sm-text">3D design</p>
-              </div>
-              <div class="tool">
-                <img src="images/zeplin.png" alt="figma" />
-                <p>Zeplin</p>
-                <p class="sm-text">Design workspace</p>
-              </div>
-              <div class="tool">
-                <img src="images/vector.png" alt="figma" />
-                <p>Vectornator</p>
-                <p class="sm-text">Graphic Design</p>
-              </div>
-              <div class="tool">
-                <img src="images/roto.png" alt="figma" />
-                <p>Rotato</p>
-                <p class="sm-text">Mockups</p>
-              </div>
-              <div class="tool">
-                <img src="images/vs.png" alt="figma" />
-                <p>VS Code</p>
-                <p class="sm-text">Code editor</p>
-              </div>
-              <div class="tool">
-                <img src="images/xcode.png" alt="figma" />
-                <p>Xcode</p>
-                <p class="sm-text">iOS development</p>
-              </div>
-              <div class="tool">
-                <img src="images/notion.png" alt="figma" />
-                <p>Notion</p>
-                <p class="sm-text">Project managment</p>
+              <div class="tools">
+                <div class="tool">
+                  <img
+                    src="images/vector.png"
+                    alt="vector"
+                    class="tool__image"
+                  />
+                  <p>Vectornator</p>
+                  <p class="sm-text">Graphic Design</p>
+                </div>
+                <div class="tool">
+                  <img src="images/roto.png" alt="roto" class="tool__image" />
+                  <p>Rotato</p>
+                  <p class="sm-text">Mockups</p>
+                </div>
+                <div class="tool">
+                  <img src="images/vs.png" alt="vs" class="tool__image" />
+                  <p>VS Code</p>
+                  <p class="sm-text">Code editor</p>
+                </div>
+                <div class="tool">
+                  <img src="images/xcode.png" alt="xcode" class="tool__image" />
+                  <p>Xcode</p>
+                  <p class="sm-text">iOS development</p>
+                </div>
+                <div class="tool">
+                  <img
+                    src="images/notion.png"
+                    alt="notion"
+                    class="tool__image"
+                  />
+                  <p>Notion</p>
+                  <p class="sm-text">Project managment</p>
+                </div>
               </div>
             </div>
-          </div>
+          </section>
         </li>
       </ul>
     </main>
